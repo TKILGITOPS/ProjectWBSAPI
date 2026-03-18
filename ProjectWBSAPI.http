@@ -1,0 +1,6 @@
+@ProjectWBSAPI_HostAddress = http://localhost:5252
+
+GET {{ProjectWBSAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

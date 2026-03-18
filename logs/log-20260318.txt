@@ -1,0 +1,162 @@
+2026-03-18 14:23:28.693 +05:30 [INF] Next run scheduled at "2026-03-19T00:00:00.0000000+05:30"
+2026-03-18 14:23:29.052 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:23:29.055 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:23:29.166 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:23:29.168 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:23:29.169 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:23:29.863 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:23:30.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:23:30.201 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:23:30.207 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 352.6698ms
+2026-03-18 14:23:30.231 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 30.6049ms
+2026-03-18 14:23:30.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.8196ms
+2026-03-18 14:23:30.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:23:30.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.1076ms
+2026-03-18 14:24:04.936 +05:30 [INF] Next run scheduled at "2026-03-19T00:00:00.0000000+05:30"
+2026-03-18 14:24:05.229 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:24:05.232 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:24:05.330 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:24:05.331 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:24:05.333 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:24:05.673 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:24:05.936 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 275.0267ms
+2026-03-18 14:24:05.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:24:05.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:24:05.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 17.8814ms
+2026-03-18 14:24:05.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.193ms
+2026-03-18 14:24:06.029 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:24:06.043 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.1981ms
+2026-03-18 14:25:29.205 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:25:29.243 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 38.4341ms
+2026-03-18 14:25:29.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:25:29.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:25:29.274 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 13.8066ms
+2026-03-18 14:25:29.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0193ms
+2026-03-18 14:25:29.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:25:29.339 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.8443ms
+2026-03-18 14:25:39.947 +05:30 [INF] Next run scheduled at "2026-03-19T00:00:00.0000000+05:30"
+2026-03-18 14:25:40.245 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:25:40.248 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:25:40.345 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:25:40.346 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:25:40.348 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:25:40.830 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:25:41.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 279.5556ms
+2026-03-18 14:25:41.142 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:25:41.142 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:25:41.151 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 8.814ms
+2026-03-18 14:25:41.193 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.5212ms
+2026-03-18 14:25:41.230 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:25:41.240 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.0087ms
+2026-03-18 14:27:11.623 +05:30 [INF] Next run scheduled at "2026-03-19T00:00:00.0000000+05:30"
+2026-03-18 14:27:11.916 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:27:11.918 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:27:12.013 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:27:12.015 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:27:12.016 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:27:12.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:27:12.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 285.4237ms
+2026-03-18 14:27:12.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:27:12.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:27:12.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 9.041ms
+2026-03-18 14:27:12.831 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.913ms
+2026-03-18 14:27:12.868 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:27:12.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.5787ms
+2026-03-18 14:31:03.316 +05:30 [INF] Next run scheduled at "2026-03-19T14:25:00.0000000+05:30"
+2026-03-18 14:31:03.618 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:31:03.621 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:31:03.721 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:31:03.723 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:31:03.724 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:31:04.217 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:31:04.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:31:04.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:31:04.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 282.4001ms
+2026-03-18 14:31:04.497 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 16.3594ms
+2026-03-18 14:31:04.531 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.5338ms
+2026-03-18 14:31:04.568 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:31:04.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.4942ms
+2026-03-18 14:31:21.753 +05:30 [INF] Next run scheduled at "2026-03-18T14:32:00.0000000+05:30"
+2026-03-18 14:31:22.051 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:31:22.054 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:31:22.150 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:31:22.152 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:31:22.153 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:31:22.577 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:31:22.836 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 270.456ms
+2026-03-18 14:31:22.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:31:22.839 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:31:22.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 30.4442ms
+2026-03-18 14:31:22.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.6777ms
+2026-03-18 14:31:22.938 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:31:22.953 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.1906ms
+2026-03-18 14:32:08.089 +05:30 [INF] Project sync started0
+2026-03-18 14:32:13.164 +05:30 [WRN] No store type was specified for the decimal property 'ProjectDuration' on entity type 'Project'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 14:32:13.166 +05:30 [WRN] No store type was specified for the decimal property 'WBSDuration' on entity type 'WBS'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 14:32:14.243 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='120']
+SELECT UPPER(LTRIM(RTRIM([p].[ProjectCode])))
+FROM [Project] AS [p]
+2026-03-18 14:32:14.277 +05:30 [INF] No. of project inserted -0
+2026-03-18 14:32:14.278 +05:30 [INF] Project sync ended0
+2026-03-18 14:32:14.282 +05:30 [INF] WBS sync started1
+2026-03-18 14:32:17.781 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='120']
+SELECT [p].[ProjectID], [p].[BU], [p].[CreatedAt], [p].[CreatedBy], [p].[ProjectCode], [p].[ProjectDescription], [p].[ProjectDuration], [p].[ProjectEndDate], [p].[ProjectName], [p].[ProjectStartDate], [p].[ProjectStatus], [p].[UpdatedAt], [p].[UpdatedBy]
+FROM [Project] AS [p]
+2026-03-18 14:32:17.881 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='120']
+SELECT [w].[WBSID], [w].[CreatedAt], [w].[CreatedBy], [w].[ParentWBSID], [w].[ProjectID], [w].[UpdatedAt], [w].[UpdatedBy], [w].[WBSCode], [w].[WBSDescription], [w].[WBSDuration], [w].[WBSEndDate], [w].[WBSName], [w].[WBSStartDate], [w].[WBSStatus]
+FROM [WBS] AS [w]
+2026-03-18 14:32:18.099 +05:30 [INF] No. of WBS inserted -0
+2026-03-18 14:32:18.101 +05:30 [INF] WBS sync end1
+2026-03-18 14:32:18.110 +05:30 [INF] WBS updation start2
+2026-03-18 14:32:18.159 +05:30 [INF] WBS updation end2
+2026-03-18 14:32:18.161 +05:30 [INF] Daily job executed at "2026-03-18T14:32:18.1609298+05:30"
+2026-03-18 14:32:18.166 +05:30 [INF] Next run scheduled at "2026-03-19T14:32:00.0000000+05:30"
+2026-03-18 14:32:58.775 +05:30 [INF] Next run scheduled at "2026-03-19T14:32:00.0000000+05:30"
+2026-03-18 14:32:59.083 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:32:59.086 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:32:59.185 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:32:59.186 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:32:59.187 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:32:59.763 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:33:00.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 277.3409ms
+2026-03-18 14:33:00.043 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:33:00.044 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:33:00.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 18.5899ms
+2026-03-18 14:33:00.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.0163ms
+2026-03-18 14:33:00.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:33:00.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.0611ms
+2026-03-18 14:34:22.408 +05:30 [INF] Next run scheduled at "2026-03-18T14:35:00.0000000+05:30"
+2026-03-18 14:34:22.705 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 14:34:22.708 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 14:34:22.804 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 14:34:22.806 +05:30 [INF] Hosting environment: Development
+2026-03-18 14:34:22.807 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI\ProjectWBSAPI
+2026-03-18 14:34:23.264 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 14:34:23.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 14:34:23.526 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 14:34:23.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 277.4531ms
+2026-03-18 14:34:23.543 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 19.1866ms
+2026-03-18 14:34:23.586 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.1127ms
+2026-03-18 14:34:23.623 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 14:34:23.635 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.3472ms
+2026-03-18 14:35:04.553 +05:30 [INF] Project sync started0
+2026-03-18 14:35:19.351 +05:30 [WRN] No store type was specified for the decimal property 'ProjectDuration' on entity type 'Project'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 14:35:19.354 +05:30 [WRN] No store type was specified for the decimal property 'WBSDuration' on entity type 'WBS'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 14:35:19.972 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='120']
+SELECT UPPER(LTRIM(RTRIM([p].[ProjectCode])))
+FROM [Project] AS [p]
+2026-03-18 14:35:31.071 +05:30 [INF] No. of project inserted -0
+2026-03-18 14:35:31.073 +05:30 [INF] Project sync ended0
+2026-03-18 14:35:31.079 +05:30 [INF] WBS sync started1
+2026-03-18 14:35:34.733 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='120']
+SELECT [p].[ProjectID], [p].[BU], [p].[CreatedAt], [p].[CreatedBy], [p].[ProjectCode], [p].[ProjectDescription], [p].[ProjectDuration], [p].[ProjectEndDate], [p].[ProjectName], [p].[ProjectStartDate], [p].[ProjectStatus], [p].[UpdatedAt], [p].[UpdatedBy]
+FROM [Project] AS [p]
+2026-03-18 14:35:34.836 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='120']
+SELECT [w].[WBSID], [w].[CreatedAt], [w].[CreatedBy], [w].[ParentWBSID], [w].[ProjectID], [w].[UpdatedAt], [w].[UpdatedBy], [w].[WBSCode], [w].[WBSDescription], [w].[WBSDuration], [w].[WBSEndDate], [w].[WBSName], [w].[WBSStartDate], [w].[WBSStatus]
+FROM [WBS] AS [w]
+2026-03-18 14:35:35.075 +05:30 [INF] No. of WBS inserted -0
+2026-03-18 14:35:35.077 +05:30 [INF] WBS sync end1
+2026-03-18 14:35:35.087 +05:30 [INF] WBS updation start2
+2026-03-18 14:35:35.141 +05:30 [INF] WBS updation end2
+2026-03-18 14:35:35.143 +05:30 [INF] Daily job executed at "2026-03-18T14:35:35.1432839+05:30"
+2026-03-18 14:35:35.148 +05:30 [INF] Next run scheduled at "2026-03-19T14:35:00.0000000+05:30"
