@@ -1,4 +1,5 @@
-﻿using ProjectWBSAPI.Model;
+﻿using Microsoft.Extensions.Options;
+using ProjectWBSAPI.Model;
 using SAP.Middleware.Connector;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -13,17 +14,27 @@ namespace ProjectWBSAPI.Helper
             _sapConnection = sapConnection;
         }
 
-        public List<ProjectDto> GetProjects() 
+        public List<ProjectDto> GetProjects(bool dateflag) 
         {
             var destination = _sapConnection.GetDestination();
 
             var repository = destination.Repository;
 
             IRfcFunction function = repository.CreateFunction("Z_PS_FM_TIMETOOL");
+            DateTime endDate;
+            DateTime startDate;
 
-            DateTime startDate = Convert.ToDateTime("01-JAN-2020");// DateTime.Now.AddDays(-1);
+            if (dateflag == true)
+            {
+                endDate = DateTime.Now;
+                startDate = endDate.AddDays(-1);
+            }
+            else
+            {
+                startDate = Convert.ToDateTime("01-JAN-2020");// DateTime.Now.AddDays(-1);                
+                endDate = Convert.ToDateTime("10-MAR-2020"); //DateTime.Now;                
+            }
             function.SetValue("FROM_DATE", startDate.ToString("yyyyMMdd"));
-            DateTime endDate = Convert.ToDateTime("25-FEB-2020"); //DateTime.Now;
             function.SetValue("TO_DATE", endDate.ToString("yyyyMMdd"));
 
             function.Invoke(destination);
@@ -46,7 +57,7 @@ namespace ProjectWBSAPI.Helper
             return orders;
         }
 
-        public List<WBSDto> GetWBS() 
+        public List<WBSDto> GetWBS(bool dateflag) 
         {
             var destination = _sapConnection.GetDestination();
 
@@ -54,9 +65,20 @@ namespace ProjectWBSAPI.Helper
 
             IRfcFunction function = repository.CreateFunction("Z_PS_FM_TIMETOOL");
 
-            DateTime startDate = Convert.ToDateTime("01-JAN-2020");// DateTime.Now.AddDays(-1);
+            DateTime endDate;
+            DateTime startDate;
+
+            if (dateflag == true)
+            {
+                endDate = DateTime.Now;
+                startDate = endDate.AddDays(-1);
+            }
+            else
+            {
+                startDate = Convert.ToDateTime("01-JAN-2020");// DateTime.Now.AddDays(-1);                
+                endDate = Convert.ToDateTime("10-MAR-2020"); //DateTime.Now;                
+            }
             function.SetValue("FROM_DATE", startDate.ToString("yyyyMMdd"));
-            DateTime endDate = Convert.ToDateTime("25-FEB-2020"); //DateTime.Now;
             function.SetValue("TO_DATE", endDate.ToString("yyyyMMdd"));
 
             function.Invoke(destination);

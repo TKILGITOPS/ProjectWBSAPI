@@ -5,10 +5,40 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/ProjectWBS/process": {
+    "/api/ProjectWBS/ProjectSync": {
       "post": {
         "tags": [
           "ProjectWBS"
+        ],
+        "parameters": [
+          {
+            "name": "DateFlag",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ProjectWBS/WBSSync": {
+      "post": {
+        "tags": [
+          "ProjectWBS"
+        ],
+        "parameters": [
+          {
+            "name": "DateFlag",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
         ],
         "responses": {
           "200": {

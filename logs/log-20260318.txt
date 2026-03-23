@@ -160,3 +160,17 @@ FROM [WBS] AS [w]
 2026-03-18 14:35:35.141 +05:30 [INF] WBS updation end2
 2026-03-18 14:35:35.143 +05:30 [INF] Daily job executed at "2026-03-18T14:35:35.1432839+05:30"
 2026-03-18 14:35:35.148 +05:30 [INF] Next run scheduled at "2026-03-19T14:35:00.0000000+05:30"
+2026-03-18 16:28:37.001 +05:30 [INF] Next run scheduled at "2026-03-19T14:35:00.0000000+05:30"
+2026-03-18 16:28:37.307 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-18 16:28:37.310 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-18 16:28:37.451 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 16:28:37.457 +05:30 [INF] Hosting environment: Development
+2026-03-18 16:28:37.459 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI
+2026-03-18 16:28:38.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-18 16:28:38.595 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 308.1214ms
+2026-03-18 16:28:38.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-18 16:28:38.602 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-18 16:28:38.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 25.2645ms
+2026-03-18 16:28:38.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.47ms
+2026-03-18 16:28:38.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-18 16:28:38.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.175ms

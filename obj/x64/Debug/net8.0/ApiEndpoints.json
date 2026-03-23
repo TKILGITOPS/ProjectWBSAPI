@@ -1,12 +1,34 @@
 [
   {
     "ContainingType": "ProjectWBSAPI.Controllers.ProjectWBSController",
-    "Method": "Process",
-    "RelativePath": "api/ProjectWBS/process",
+    "Method": "ProjectSync",
+    "RelativePath": "api/ProjectWBS/ProjectSync",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "DateFlag",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectWBSAPI.Controllers.ProjectWBSController",
+    "Method": "WBSSync",
+    "RelativePath": "api/ProjectWBS/WBSSync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DateFlag",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

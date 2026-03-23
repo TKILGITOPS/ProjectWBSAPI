@@ -8,18 +8,25 @@ namespace ProjectWBSAPI.Controllers
     [ApiController]
     public class ProjectWBSController : ControllerBase
     {
-        private readonly IOrderService _orderService;
+        private readonly ProjectSyncService _orderService;
 
-        public ProjectWBSController(IOrderService orderService)
+        public ProjectWBSController(ProjectSyncService orderService)
         {
             _orderService = orderService;
         }
 
-        [HttpPost("process")]
-        public async Task<IActionResult> Process()
+        [HttpPost("ProjectSync")]
+        public async Task<IActionResult> ProjectSync(bool DateFlag)
         {
-            await _orderService.ProcessOrdersAsync();
-            return Ok("Processed");
+            await _orderService.SyncProjects(DateFlag);
+            return Ok("Project Sync successfully");
+        }
+
+        [HttpPost("WBSSync")]
+        public async Task<IActionResult> WBSSync(bool DateFlag)
+        {
+            await _orderService.SyncWBS(DateFlag);
+            return Ok("WBS Sync successfully");
         }
     }
 }
