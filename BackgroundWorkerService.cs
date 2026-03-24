@@ -55,12 +55,12 @@ public class BackgroundWorkerService : BackgroundService
                 if (Convert.ToInt32(projectresult.projectCount) > 0 || Convert.ToInt32(wbsresult.wbsCount) > 0)
                 {
                     var projectListHtml = "<ul>" + string.Join("", projectresult.projects.Select(p => $"<li>{p.ProjectCode}</li>"))+ "</ul>";
-                    var projectListwbsHtml = "<ul>" + string.Join("", wbsresult.projects.Select(p => $"<li>{p.ProjectCode}</li>")) + "</ul>";
+                    var wbsListHtml = "<ul>" + string.Join("", wbsresult.wbss.Select(p => $"<li>{p.WBSCode}</li>")) + "</ul>";
                     string body = $"Hello Team,<br/><br/>This is to inform you that there are {projectresult.projectCount} projects and {wbsresult.wbsCount} WBS were synced and inserted into the Pragati Application.<br/><br/>" +
                                    "Please see the following project list for your reference : <br/>" +
                                    $"{projectListHtml} <br/><br/>" +
-                                   "Additionally, Please see the following project list that WBS not inserted in the Pragati Application : <br/>" +
-                                   $"{projectListwbsHtml} <br/><br/>" +
+                                   "Additionally, Please see the following WBS list that are inserted in the Pragati Application : <br/>" +
+                                   $"{wbsListHtml} <br/><br/>" +
                                    "Regards,<br/>" +
                                    "System Administration <br/><br/>"+
                     "<span style='color:red; font-weight:bold;'>Note:- This is system generated email, please do not reply.</span>";

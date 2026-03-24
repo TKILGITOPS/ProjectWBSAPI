@@ -44,10 +44,10 @@ namespace ProjectWBSAPI.Controllers
             var wbsresult = await _orderService.SyncWBS(DateFlag);
             if (Convert.ToInt32(wbsresult.wbsCount) > 0)
             {
-                var projectListHtml = "<ul>" + string.Join("", wbsresult.projects.Select(p => $"<li>{p.ProjectCode}</li>")) + "</ul>";
+                var wbsListHtml = "<ul>" + string.Join("", wbsresult.wbss.Select(p => $"<li>{p.WBSCode}</li>")) + "</ul>";
                 string body = $"Hello Team,<br/><br/>This is to inform you that there are {wbsresult.wbsCount} WBS were synced and inserted into the Pragati Application.<br/><br/>" +
-                               "Additionally, Please see the following project list that WBS not inserted in the Pragati Application : <br/>" +
-                               $"{projectListHtml} <br/><br/>" +
+                               "Please see the following WBS list that are inserted in the Pragati Application : <br/>" +
+                               $"{wbsListHtml} <br/><br/>" +
                                "Regards,<br/>" +
                                "System Administration <br/><br/>" +
                 "<span style='color:red; font-weight:bold;'>Note:- This is system generated email, please do not reply.</span>";

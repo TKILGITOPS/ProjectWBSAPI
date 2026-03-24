@@ -90,7 +90,7 @@ namespace ProjectWBSAPI.Helper
             }
         }
 
-        public async Task<(string wbsCount, List<ProjectCodes> projects)> SyncWBS(bool dateflag)
+        public async Task<(string wbsCount, List<WBSCodes> wbss)> SyncWBS(bool dateflag)
         {
             try
             {
@@ -102,7 +102,7 @@ namespace ProjectWBSAPI.Helper
                 int wbscount = 0;
                 var orders = _sapService.GetWBS(dateflag);
 
-                var projectscode = new List<ProjectCodes>();
+                var wbsscode = new List<WBS>();
                 HashSet<string> existingSet = new HashSet<string>();
                 var projects = await _context.Project
                                 .Where(x => !string.IsNullOrWhiteSpace(x.ProjectCode) && x.ProjectID != null)
@@ -141,25 +141,31 @@ namespace ProjectWBSAPI.Helper
                                 CreatedBy = "System"
                             };
                             _context.WBS.Add(wbs);
+                            wbsscode.Add(wbs);
                             existingWBS.Add(wbs);
                             existingSet.Add(key); // prevent duplicate in same batch
                             wbscount++;
                         }
                         else
                         {
-                            string abc = "exists record";
+                            //string abc = "exists record";
                         }
                     }
                     else
                     {
-                        projectscode.Add(new ProjectCodes { ProjectCode = projectCode });
-                        string abc = "exists record";
+                        //string abc = "exists record";
                     }
                 }
 
                 await _context.SaveChangesAsync();
                 _logger.LogInformation("No. of WBS inserted -" + wbscount, DateTime.Now);
                 _logger.LogInformation("WBS sync end" + 1, DateTime.Now);
+
+                var wbsCodesList = wbsscode.Select(p => new WBSCodes
+                {
+                    WBSCode = p.WBSCode
+                }).ToList();
+
                 //var existingWBSs = await _context.WBS.ToListAsync();
                 var wbsLookup = existingWBS
                                 .GroupBy(x => new { x.ProjectID, x.WBSCode })
@@ -197,7 +203,7 @@ namespace ProjectWBSAPI.Helper
                 await _context.SaveChangesAsync();
                 _logger.LogInformation("WBS updation end" + 2, DateTime.Now);
 
-                return (wbscount.ToString(), projectscode);
+                return (wbscount.ToString(), wbsCodesList);
                 //if (wbscount > 0)
                 //{
                 //    string body = $"This is to inform you that {wbscount} WBS were synced and inserted into the Pragati Application.<br/><br/>" +
