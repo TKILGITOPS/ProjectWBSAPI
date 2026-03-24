@@ -4,19 +4,23 @@ using Microsoft.Extensions.Options;
 using ProjectWBSAPI.Helper;
 using ProjectWBSAPI.Model;
 
-public class BackgroundWorkerService :BackgroundService
+public class BackgroundWorkerService : BackgroundService
 {
     readonly ILogger<BackgroundWorkerService> _logger;
     private readonly IServiceScopeFactory _serviceScopeFactory;
     private readonly TimeSpan _scheduledTime;
     private readonly bool _dynamicDateFlag;
+    private readonly IEmailService _emailService;
+    private readonly IConfiguration _config;
 
-    public BackgroundWorkerService(ILogger<BackgroundWorkerService> logger, IServiceScopeFactory serviceScopeFactory, IOptions<JobSettings> options, IOptions<DateSetting> dateOptions)
+    public BackgroundWorkerService(ILogger<BackgroundWorkerService> logger, IServiceScopeFactory serviceScopeFactory, IOptions<JobSettings> options, IOptions<DateSetting> dateOptions, IEmailService emailService, IConfiguration config)
     {
         _logger = logger;
         _serviceScopeFactory = serviceScopeFactory;
         _scheduledTime = options.Value.RunTime;
         _dynamicDateFlag = dateOptions.Value.UseDynamicDates;
+        _emailService = emailService;
+        _config = config;
     }
 
     protected async override Task ExecuteAsync(CancellationToken stoppingToken)
@@ -41,18 +45,33 @@ public class BackgroundWorkerService :BackgroundService
 
             await Task.Delay(delay, stoppingToken);
             try
-            {            
-            using var scope = _serviceScopeFactory.CreateScope();
+            {
+                using var scope = _serviceScopeFactory.CreateScope();
 
-            var orderService = scope.ServiceProvider.GetRequiredService<ProjectWBSAPI.Helper.ProjectSyncService>();
-            await orderService.SyncProjects(_dynamicDateFlag);
-            await orderService.SyncWBS(_dynamicDateFlag);
+                var orderService = scope.ServiceProvider.GetRequiredService<ProjectWBSAPI.Helper.ProjectSyncService>();
+                var projectresult = await orderService.SyncProjects(_dynamicDateFlag);
+                var wbsresult = await orderService.SyncWBS(_dynamicDateFlag);
 
-            await RunDailyJob();
+                if (Convert.ToInt32(projectresult.projectCount) > 0 || Convert.ToInt32(wbsresult.wbsCount) > 0)
+                {
+                    var projectListHtml = "<ul>" + string.Join("", projectresult.projects.Select(p => $"<li>{p.ProjectCode}</li>"))+ "</ul>";
+                    var projectListwbsHtml = "<ul>" + string.Join("", wbsresult.projects.Select(p => $"<li>{p.ProjectCode}</li>")) + "</ul>";
+                    string body = $"Hello Team,<br/><br/>This is to inform you that there are {projectresult.projectCount} projects and {wbsresult.wbsCount} WBS were synced and inserted into the Pragati Application.<br/><br/>" +
+                                   "Please see the following project list for your reference : <br/>" +
+                                   $"{projectListHtml} <br/><br/>" +
+                                   "Additionally, Please see the following project list that WBS not inserted in the Pragati Application : <br/>" +
+                                   $"{projectListwbsHtml} <br/><br/>" +
+                                   "Regards,<br/>" +
+                                   "System Administration <br/><br/>"+
+                    "<span style='color:red; font-weight:bold;'>Note:- This is system generated email, please do not reply.</span>";
+                    await _emailService.SendEmailAsync(_config["Email:TO"]!, _config["Email:CC"]!, "Project and WBS Sync Completed Successfully in Pragati Application", body);
+                }
+
+                await RunDailyJob();
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message+ " - Error occurred while executing scheduled job.", DateTime.Now);
+                _logger.LogError(ex.Message + " - Error occurred while executing scheduled job.", DateTime.Now);
             }
         }
     }

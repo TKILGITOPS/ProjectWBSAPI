@@ -7,24 +7,20 @@
       "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:helper\\sapprojectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\helper\\projectsyncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:helper\\projectsyncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\backgroundworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:backgroundworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\controllers\\projectwbscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:controllers\\projectwbscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\backgroundworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:backgroundworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|d:\\projects\\projectwbsapi\\helper\\projectsyncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE8E7419-38E7-2768-D164-18C46BA87A84}|ProjectWBSAPI.csproj|solutionrelative:helper\\projectsyncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,22 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SapProjectService.cs",
-              "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\Helper\\SapProjectService.cs",
-              "RelativeDocumentMoniker": "Helper\\SapProjectService.cs",
-              "ToolTip": "D:\\Projects\\ProjectWBSAPI\\Helper\\SapProjectService.cs",
-              "RelativeToolTip": "Helper\\SapProjectService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCkAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T06:01:22.011Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -68,65 +50,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "SapProjectService.cs",
+              "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\Helper\\SapProjectService.cs",
+              "RelativeDocumentMoniker": "Helper\\SapProjectService.cs",
+              "ToolTip": "D:\\Projects\\ProjectWBSAPI\\Helper\\SapProjectService.cs",
+              "RelativeToolTip": "Helper\\SapProjectService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwFMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T06:07:10.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ProjectSyncService.cs",
               "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\Helper\\ProjectSyncService.cs",
               "RelativeDocumentMoniker": "Helper\\ProjectSyncService.cs",
               "ToolTip": "D:\\Projects\\ProjectWBSAPI\\Helper\\ProjectSyncService.cs",
               "RelativeToolTip": "Helper\\ProjectSyncService.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAUwKQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAqwJ8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T04:41:36.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Projects\\ProjectWBSAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T04:40:56.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Projects\\ProjectWBSAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAEkAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-03-18T11:05:56.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProjectWBSController.cs",
               "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\Controllers\\ProjectWBSController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProjectWBSController.cs",
               "ToolTip": "D:\\Projects\\ProjectWBSAPI\\Controllers\\ProjectWBSController.cs",
               "RelativeToolTip": "Controllers\\ProjectWBSController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T05:23:19.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BackgroundWorkerService.cs",
               "DocumentMoniker": "D:\\Projects\\ProjectWBSAPI\\BackgroundWorkerService.cs",
               "RelativeDocumentMoniker": "BackgroundWorkerService.cs",
               "ToolTip": "D:\\Projects\\ProjectWBSAPI\\BackgroundWorkerService.cs",
               "RelativeToolTip": "BackgroundWorkerService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIA4wDIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T04:42:57.745Z",
               "EditorCaption": ""

@@ -23,7 +23,7 @@ namespace ProjectWBSAPI.Helper
             _dynamicDateFlag = options.Value.UseDynamicDates;
         }
 
-        public async Task SyncProjects(bool dateflag)
+        public async Task<(string projectCount,List<ProjectCodes> projects)> SyncProjects(bool dateflag)
         {
             try
             {
@@ -33,6 +33,7 @@ namespace ProjectWBSAPI.Helper
                     dateflag = _dynamicDateFlag;
                 }
                 int projectcount = 0;
+                var projects = new List<Project>();
                 var orders = _sapService.GetProjects(dateflag);
                 var existingProjectCodes = _context.Project
                                             .Select(x => x.ProjectCode!.Trim().ToUpper())
@@ -42,7 +43,7 @@ namespace ProjectWBSAPI.Helper
                 {
                     if (!existingProjectCodes.Contains(order.ProjectCode!.ToUpper().Trim()))
                     {
-                        _context.Project.Add(new Project
+                        var project = new Project
                         {
                             ProjectCode = order.ProjectCode,
                             ProjectName = order.ProjectDescription,
@@ -52,8 +53,11 @@ namespace ProjectWBSAPI.Helper
                                 .FirstOrDefault(),
                             ProjectStatus = "In Progress",
                             CreatedBy = "System"
-                        });
+                        };
+                        _context.Project.Add(project);
+                        projects.Add(project);
                         existingProjectCodes.Add(order.ProjectCode!.ToUpper().Trim());
+
                         projectcount++;
                     }
                     else
@@ -65,21 +69,28 @@ namespace ProjectWBSAPI.Helper
                 await _context.SaveChangesAsync();
                 _logger.LogInformation("No. of project inserted -" + projectcount, DateTime.Now);
                 _logger.LogInformation("Project sync ended"+0, DateTime.Now);
-                if (projectcount > 0)
+                var projectCodesList = projects.Select(p => new ProjectCodes
                 {
-                    string body = $"This is to inform you that {projectcount} projects were synced and inserted into the Pragati Application.<br/><br/>" +
-                                   "Regards,<br/>" +
-                                   "System Administration";
-                    await _emailService.SendEmailAsync("prathmesh.parkhe@tkil.com","dattatray.mhase@tkil.com", "Project Sync in Pragati Application", body);
-                }
+                    ProjectCode = p.ProjectCode
+                }).ToList();
+
+                return (projectcount.ToString(), projectCodesList);
+                //if (projectcount > 0)
+                //{
+                //    string body = $"This is to inform you that {projectcount} projects were synced and inserted into the Pragati Application.<br/><br/>" +
+                //                   "Regards,<br/>" +
+                //                   "System Administration";
+                //    await _emailService.SendEmailAsync("prathmesh.parkhe@tkil.com","dattatray.mhase@tkil.com", "Project Sync in Pragati Application", body);
+                //}
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error occurred while executing scheduled job.");
+                return ("0", new List<ProjectCodes>());
             }
         }
 
-        public async Task SyncWBS(bool dateflag)
+        public async Task<(string wbsCount, List<ProjectCodes> projects)> SyncWBS(bool dateflag)
         {
             try
             {
@@ -91,12 +102,22 @@ namespace ProjectWBSAPI.Helper
                 int wbscount = 0;
                 var orders = _sapService.GetWBS(dateflag);
 
+                var projectscode = new List<ProjectCodes>();
                 HashSet<string> existingSet = new HashSet<string>();
                 var projects = await _context.Project
+                                .Where(x => !string.IsNullOrWhiteSpace(x.ProjectCode) && x.ProjectID != null)
+                                .Select(x => new
+                                {
+                                    ProjectCode = x.ProjectCode.Trim().ToUpper(),
+                                    x.ProjectID
+                                })
+                                .Distinct()
                                 .ToDictionaryAsync(
-                                    x => x.ProjectCode!.Trim().ToUpper(),
+                                    x => x.ProjectCode!.Trim().ToUpper(), 
                                     x => x.ProjectID);
-                var existingWBS = await _context.WBS.ToListAsync();
+                var existingWBS = await _context.WBS
+                    //.Select(x => new { x.ProjectID,x.WBSCode,x.WBSName })
+                    .ToListAsync();
 
                 existingSet = existingWBS
                                   .Select(x => $"{x.ProjectID}_{x.WBSCode}_{x.WBSName}")
@@ -124,12 +145,22 @@ namespace ProjectWBSAPI.Helper
                             existingSet.Add(key); // prevent duplicate in same batch
                             wbscount++;
                         }
+                        else
+                        {
+                            string abc = "exists record";
+                        }
+                    }
+                    else
+                    {
+                        projectscode.Add(new ProjectCodes { ProjectCode = projectCode });
+                        string abc = "exists record";
                     }
                 }
 
                 await _context.SaveChangesAsync();
                 _logger.LogInformation("No. of WBS inserted -" + wbscount, DateTime.Now);
                 _logger.LogInformation("WBS sync end" + 1, DateTime.Now);
+                //var existingWBSs = await _context.WBS.ToListAsync();
                 var wbsLookup = existingWBS
                                 .GroupBy(x => new { x.ProjectID, x.WBSCode })
                                 .ToDictionary(
@@ -165,18 +196,21 @@ namespace ProjectWBSAPI.Helper
 
                 await _context.SaveChangesAsync();
                 _logger.LogInformation("WBS updation end" + 2, DateTime.Now);
-                if (wbscount > 0)
-                {
-                    string body = $"This is to inform you that {wbscount} WBS were synced and inserted into the Pragati Application.<br/><br/>" +
-                                   "Regards,<br/>" +
-                                   "System Administration";
 
-                    await _emailService.SendEmailAsync("prathmesh.parkhe@tkil.com", "dattatray.mhase@tkil.com", "WBS Sync in Pragati Application", body);
-                }
+                return (wbscount.ToString(), projectscode);
+                //if (wbscount > 0)
+                //{
+                //    string body = $"This is to inform you that {wbscount} WBS were synced and inserted into the Pragati Application.<br/><br/>" +
+                //                   "Regards,<br/>" +
+                //                   "System Administration";
+
+                //    await _emailService.SendEmailAsync("prathmesh.parkhe@tkil.com", "dattatray.mhase@tkil.com", "WBS Sync in Pragati Application", body);
+                //}
             }
             catch (Exception ex)
             {
-                throw ex;
+                _logger.LogError(ex, "Error occurred while executing scheduled job.");
+                return ("0", new List<ProjectCodes>());
             }
         }
 

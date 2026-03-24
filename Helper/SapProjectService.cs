@@ -32,7 +32,7 @@ namespace ProjectWBSAPI.Helper
             else
             {
                 startDate = Convert.ToDateTime("01-JAN-2020");// DateTime.Now.AddDays(-1);                
-                endDate = Convert.ToDateTime("10-MAR-2020"); //DateTime.Now;                
+                endDate = Convert.ToDateTime("30-JUN-2020"); //DateTime.Now;                
             }
             function.SetValue("FROM_DATE", startDate.ToString("yyyyMMdd"));
             function.SetValue("TO_DATE", endDate.ToString("yyyyMMdd"));
@@ -75,8 +75,8 @@ namespace ProjectWBSAPI.Helper
             }
             else
             {
-                startDate = Convert.ToDateTime("01-JAN-2020");// DateTime.Now.AddDays(-1);                
-                endDate = Convert.ToDateTime("10-MAR-2020"); //DateTime.Now;                
+                startDate = Convert.ToDateTime("01-MAY-2020");// DateTime.Now.AddDays(-1);                
+                endDate = Convert.ToDateTime("30-JUN-2020"); //DateTime.Now;                
             }
             function.SetValue("FROM_DATE", startDate.ToString("yyyyMMdd"));
             function.SetValue("TO_DATE", endDate.ToString("yyyyMMdd"));

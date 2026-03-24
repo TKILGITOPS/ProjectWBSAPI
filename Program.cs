@@ -20,6 +20,7 @@ builder.Services.Configure<SapSettings>(
 builder.Services.Configure<JobSettings>(
     builder.Configuration.GetSection("JobSettings"));
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddSingleton<IEmailService, EmailService>();
 builder.Services.AddSingleton<SapConnectionService>();
 builder.Services.AddScoped<SapProjectService>();
 builder.Services.AddScoped<ProjectSyncService>();
