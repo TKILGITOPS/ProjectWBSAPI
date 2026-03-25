@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectWBSAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97821bc7680e8f0cf913142f2deb1f5ea7062b45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72d2a5ce5436f91f65569ec3bb5125442808f081")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectWBSAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectWBSAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

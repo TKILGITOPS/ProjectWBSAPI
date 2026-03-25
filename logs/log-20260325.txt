@@ -1,0 +1,14 @@
+2026-03-25 08:10:59.791 +05:30 [INF] Next run scheduled at "2026-03-25T10:16:00.0000000+05:30"
+2026-03-25 08:11:00.120 +05:30 [INF] Now listening on: https://localhost:7008
+2026-03-25 08:11:00.123 +05:30 [INF] Now listening on: http://localhost:5252
+2026-03-25 08:11:00.236 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-25 08:11:00.237 +05:30 [INF] Hosting environment: Development
+2026-03-25 08:11:00.239 +05:30 [INF] Content root path: D:\Projects\ProjectWBSAPI
+2026-03-25 08:11:01.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/index.html - null null
+2026-03-25 08:11:01.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/index.html - 200 null text/html;charset=utf-8 329.3598ms
+2026-03-25 08:11:01.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-25 08:11:01.349 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/_vs/browserLink - null null
+2026-03-25 08:11:01.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 16.0448ms
+2026-03-25 08:11:01.414 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.3385ms
+2026-03-25 08:11:01.455 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - null null
+2026-03-25 08:11:01.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7008/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.0699ms

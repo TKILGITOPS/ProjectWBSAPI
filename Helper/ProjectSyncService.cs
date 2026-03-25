@@ -216,7 +216,7 @@ namespace ProjectWBSAPI.Helper
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error occurred while executing scheduled job.");
-                return ("0", new List<ProjectCodes>());
+                return ("0", new List<WBSCodes>());
             }
         }
 
